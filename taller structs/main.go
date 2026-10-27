@@ -71,7 +71,7 @@ func main() {
 	inv.AgregarProducto(p1)
 	inv.AgregarProducto(p2)
 
-	fmt.Println("--- Inventario Inicial ---")
+	fmt.Println("Inventario Inicial")
 	inv.ListarProductos()
 
 	if prod, existe := inv.BuscarProducto(1); existe {
@@ -82,6 +82,6 @@ func main() {
 
 	inv.EliminarProducto(2)
 
-	fmt.Println("\n--- Inventario Actualizado ---")
+	fmt.Println("\nInventario Actualizado")
 	inv.ListarProductos()
 }
