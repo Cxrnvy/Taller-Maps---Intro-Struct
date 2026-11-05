@@ -34,3 +34,16 @@ func main() {
 	tablets[0].SetName("Paracetamol Forte")
 	fmt.Println("Nuevo nombre con getter: ", tablets[0].GetName())
 }
+
+/*
+fmt.Println("ACTUALIZACION MEDICAMENTO")
+fmt.Println("Nombre actual: ", tablets[0].GetName())
+
+var nuevoNombre string
+	fmt.Print("Escribe el nuevo nombre para la pastilla: ")
+	fmt.Scanln(&nuevoNombre)
+
+	tablets[0].SetName(nuevoNombre)
+	fmt.Println("Nuevo nombre con getter: ", tablets[0].GetName())
+
+*/
