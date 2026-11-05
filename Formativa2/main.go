@@ -18,7 +18,7 @@ func main() {
 	tablets := []farmacia.Tablet{t1, t2}
 	syrups := []farmacia.Syrup{s1, s2}
 
-	fmt.Println("--- INVENTARIO DE MEDICAMENTOS ---")
+	fmt.Println("INVENTARIO DE MEDICAMENTOS")
 	for _, t := range tablets {
 		t.MostrarDetalles()
 		fmt.Printf("Caducidad: %s\n\n", t.CalcularCaducidad().Format("2006-01-02"))
@@ -29,8 +29,8 @@ func main() {
 		fmt.Printf("Caducidad: %s\n\n", s.CalcularCaducidad().Format("2006-01-02"))
 	}
 
-	fmt.Println("--- ACTUALIZANDO MEDICAMENTO ---")
-	fmt.Println("Nombre actual:", tablets[0].GetName())
+	fmt.Println("ACTUALIZANDO MEDICAMENTO")
+	fmt.Println("Nombre actual: ", tablets[0].GetName())
 	tablets[0].SetName("Paracetamol Forte")
-	fmt.Println("Nuevo nombre con getter:", tablets[0].GetName())
+	fmt.Println("Nuevo nombre con getter: ", tablets[0].GetName())
 }

@@ -1,8 +1,6 @@
 package farmacia
 
 import (
-	"errors"
-	"fmt"
 	"time"
 )
 
@@ -11,3 +9,4 @@ type Medicine struct {
 	manufacturer    string
 	manufactureDate time.Time
 	shelfLife       int
+}
